@@ -12,11 +12,11 @@
 
 Classification Model Architecture
 
-![Classification Model Architecture](<https://github.com/PRLAB21/COVID-19-Diagnostic-System/COV-CTNet Classification Architecture.jpg> "Classification Model Architecture")
+![Classification Model Architecture](<https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-CTNet%20Classification%20Architecture.jpg> "Classification Model Architecture")
 
 Segmentation Model Architecture
 
-![Segmentation Model Architecture](<https://github.com/PRLAB21/COVID-19-Diagnostic-System/COV-RASeg Segmentation Architecture.jpg> "Segmentation Model Architecture")
+![Segmentation Model Architecture](<https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-RASeg%20Segmentation%20Architecture.jpg> "Segmentation Model Architecture")
 
 ## How to use
 
