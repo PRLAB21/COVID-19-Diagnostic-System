@@ -1,8 +1,8 @@
 # Classification and Region Analysis of COVID-19 Infection using Lung CT Images and Deep Convolutional Neural Networks
 
-**Dataset**: <https://drive.google.com/drive/folders/1bPGOPiKpsVgcCf06x5wRljZzpidWwo9q?usp=sharing>
+This work proposes a two-stage deep Convolutional Neural Networks (CNNs) based framework for delineation of COVID-19 infected regions in Lung CT images. In the first stage, initially, COVID-19 specific CT image features are enhanced using a two-level discrete wavelet transformation. These enhanced CT images are then classified using the proposed custom-made deep CoV-CTNet. In the second stage, the CT images classified as infectious images are provided to the segmentation models for the identification and analysis of COVID-19 infectious regions. In this regard, we propose a novel semantic segmentation model CoV-RASeg, which systematically uses average and max pooling operations in the encoder and decoder blocks. This systematic utilization of max and average pooling operations helps the proposed CoV-RASeg in simultaneously learning both the boundaries and region homogeneity. Moreover, the idea of attention is incorporated to deal with mildly infected regions. The proposed two-stage framework is evaluated on a standard Lung CT image dataset, and its performance is compared with the existing deep CNN models. The performance of the proposed CoV-CTNet is evaluated using Mathew Correlation Coefficient (MCC) measure (0.98) and that of proposed CoV-RASeg using Dice Similarity (DS) score (0.95). The promising results on an unseen test set suggest that the proposed framework has the potential to help the radiologists in the identification and analysis of COVID-19 infected regions.
 
-In this repository, we provide the MATLAB GUI and Test Code for the [COVID-19 Detection System](https://arxiv.org/abs/2009.08864) for the research community to use our model.
+In this repository, we provide the MATLAB GUI and Test Code for the COVID-19 Detection System for the research community to use our model.
 
 ## Models Architecture
 
@@ -10,15 +10,24 @@ In this repository, we provide the MATLAB GUI and Test Code for the [COVID-19 De
 
 ### Classification Model Architecture
 
-Following is our Classification model that takes Lungs CT scan image as input and predicts if it is COVID patient's CT scan or normal person's CT scan. We used Discrete Wavelet Transform (DWT) as pre-precessing step to improve input representaiton of CNN model.
+Following is our Classification model that takes COVID-19 CT Lungs images as input and predicts COVID-19 Infected or Healthy CT scan. We used a Discrete Wavelet Transform (DWT) and Data augmentation as a pre-processing step to improve input representation as well as increasing the samples to improve the performance of the CNN model.
 
 ![Classification Model Architecture](https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-CTNet%20Classification%20Architecture.jpg "Classification Model Architecture")
 
 ### Segmentation Model Architecture
 
-Following is our Segmentation model that takes Lungs CT scan image as input and gives binary mask image describing which part of lungs are more effected with coronavirus. This helps in determining the severity of patient's condition.
+Following is our Segmentation model that takes COVID-19 Infected CT Lungs image as input and gives binary mask image describing which part of lungs are more effected with coronavirus. This helps in determining the severity of patient's condition.
 
 ![Segmentation Model Architecture](https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-RASeg%20Segmentation%20Architecture.jpg "Segmentation Model Architecture")
+
+## Dataset
+
+Dataset: <http://medicalsegmentation.com/covid19/>
+
+Two main steps are performed on original dataset.
+
+1. 3D to 2D conversion
+2. Separation of COVID-19 Infected and Heathy slices for classification and segmentation challenge.
 
 ## Setup
 
