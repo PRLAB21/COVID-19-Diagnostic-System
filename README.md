@@ -41,26 +41,16 @@ git install https://github.com/PRLAB21/COVID-19-Diagnostic-System.git
 cd COVID-19-Diagnostic-System-master
 ```
 
-3. Download dataset, unzip it and place it in following structure.
+3. Download dataset and place it in following structure.
 
 ```text
 COVID-19-Diagnostic-System-master
 |__dataset
    |__classification
-   |  |__corona-CT-images
-   |     |__corona
-   |     |__healthy
    |__segmentation
-      |__test-images
 ```
 
-4. Download pre-trained models and place them in following structure.
-
-```text
-|__trained-models
-   |__model-covid19-classification.mat
-   |__model-covid19-segmentation.mat
-```
+4. Pre-trained models are downloaded along with this repo and are present inside trained-models directory.
 
 5. Run either **MATLAB-GUI-app** or any code file present under **code** directory as described below.
 
