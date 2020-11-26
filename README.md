@@ -6,8 +6,6 @@ In this repository, we provide the MATLAB GUI and Test Code for the COVID-19 Det
 
 ## Models Architecture
 
-**Pre-trained Models**: <https://drive.google.com/drive/folders/1QpBnvDIcGTeVywpjOE_QIcIRqSgJrK36?usp=sharing>
-
 ### Classification Model Architecture
 
 Following is our Classification model that takes COVID-19 CT Lungs images as input and predicts COVID-19 Infected or Healthy CT scan. We used a Discrete Wavelet Transform (DWT) and Data augmentation as a pre-processing step to improve input representation as well as increasing the samples to improve the performance of the CNN model.
