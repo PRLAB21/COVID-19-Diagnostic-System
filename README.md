@@ -78,7 +78,7 @@ gui_detection
 
 Now the GUI interface will open after some time, then it will allow use to load image, preprocess it, detect COVID. In case if the input image was detected as COVID image then you can further analyze it for obtaining the segmentation mask.
 
-## Other Data
+## Disclaimer
 
 Although, Performance of the proposed Classification CoV-CTNet and segmentation COV-RASeg outperforms with the different existing deep CNN based classification and Segmentation Models, it is worth to mention, a study on a huge number of cleanly labelled COVID-19 images is required to have a more concrete conclusion on the potential of CT images for COVID-19 diagnosis.
 
