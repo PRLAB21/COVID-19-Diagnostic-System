@@ -8,13 +8,13 @@ In this repository, we provide the MATLAB GUI and Test Code for the COVID-19 Det
 
 ### Classification Model Architecture
 
-Following is our Classification model that takes COVID-19 CT Lungs images as input and predicts COVID-19 Infected or Healthy CT scan. We used a Discrete Wavelet Transform (DWT) and Data augmentation as a pre-processing step to improve input representation as well as increasing the samples to improve the performance of the CNN model.
+The proposed COV-CTNet Classification model takes COVID-19 CT Lungs images as input and predicts COVID-19 Infected from Healthy CT images. We used a Discrete Wavelet Transform (DWT) and Data augmentation as a pre-processing step to improve input representation as well as increasing the samples to enhance the performance of the CNN model.
 
 ![Classification Model Architecture](https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-CTNet%20Classification%20Architecture.jpg "Classification Model Architecture")
 
 ### Segmentation Model Architecture
 
-Following is our Segmentation model that takes COVID-19 Infected CT Lungs image as input and gives binary mask image describing which part of lungs are more effected with coronavirus. This helps in determining the severity of patient's condition.
+The proposed COV-RAseg segmentation model takes COVID-19 Infected CT Lungs image as input and predict a binary mask as well as an original with predicted mask overlay image describing the COVID-19 infected lungs region. This helps in determining the severity of a patient's condition.
 
 ![Segmentation Model Architecture](https://github.com/PRLAB21/COVID-19-Diagnostic-System/blob/main/COV-RASeg%20Segmentation%20Architecture.jpg "Segmentation Model Architecture")
 
@@ -73,7 +73,7 @@ COVID-19-Diagnostic-System-master
 -   Inside this directory there are two GUI files, the main file is **gui_detection.mlapp**. In order to use MATLAB-GUI-app type following at command window.
 
 ```MATLAB
-gui_detection
+>> gui_detection
 ```
 
 Now the GUI interface will open after some time, then it will allow use to load image, preprocess it, detect COVID. In case if the input image was detected as COVID image then you can further analyze it for obtaining the segmentation mask.
