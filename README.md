@@ -27,6 +27,12 @@ Two main steps are performed on original dataset.
 1. 3D to 2D conversion
 2. Separation of COVID-19 Infected and Heathy slices for classification and segmentation challenge.
 
+## Requirements
+
+1. Matlab 2019b.
+2. Deep Learning library.
+3. NVIDIA GeForce GTX Titan X Computer.
+
 ## Setup
 
 1. Clone this repo.
@@ -84,8 +90,8 @@ Although, Performance of the proposed Classification CoV-CTNet and segmentation 
 
 ## Citation
 
-This work is done by Saddam Hussain Khan, Anabia Sohail, Asifullah Khan, Yeon Soo Lee. The Arxiv version of the paper can be downloaded from [here](https://arxiv.org/abs/2009.08864):
-If you find this work useful, you can refer our work as:
+Khan, Saddam Hussain, et al. "Classification and Region Analysis of COVID-19 Infection using Lung CT Images and Deep Convolutional Neural Networks."
+arxiv preprint: [2009.08864](https://arxiv.org/abs/2009.08864) (2020).
 
 ```Bibtex formatted citation
 @misc{khan2020classification,
